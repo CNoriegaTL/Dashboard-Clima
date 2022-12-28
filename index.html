@@ -12,26 +12,81 @@
     />
   </head>
   <body>
-    <div class="navbar">
-      <div class="left">
-        <h1>API de Clima</h1>
+    <header>
+      <div class="navbar">
+        <div class="left">
+          <h1>API de Clima</h1>
+        </div>
+       <div class="right">
+          <input type="checkbox" id="check" />
+          <label for="check" class="checkBtn">
+            <i class="fa fa-bars"></i>
+          </label>
+          <ul class="list">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="right">
-        <input type="checkbox" id="check" />
-        <label for="check" class="checkBtn">
-          <i class="fa fa-bars"></i>
-        </label>
-        <ul class="list">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
+    </header>
+    <main>
+      <section id="location">
+        <h4>Ubicación</h4>
+        <div id="search">
+          <input type="text">
+          <button type="submit" id="btn-enviar">Enviar</button>
       </div>
-    </div>
+      </section>
+      <section id="card-resume">
+        <div class="card-icon"> <img src="https://cdn.pixabay.com/photo/2012/04/10/16/49/sun-26344_1280.png" alt="sun"></div>
+        <div class="card-container">
+          <div class="card-degree">
+            <h3>22°</h3>
+          </div>
+          <div class="card-info">
+            <h4>Soleado</h4>
+            <p>Domingo, Dic 22</p>
+          </div>
+        </div>
+      </section>
+      <section id="card-days">
+        <div class="card-day1">
+          <div class="card-icon"></div>
+          <div class="card-container">
+            <div class="card-degree"></div>
+          </div>
+        </div>
+        <div class="card-day2">
+          <div class="card-icon"></div>
+          <div class="card-container">
+            <div class="card-degree"></div>
+          </div>
+        </div>
+        <div class="card-day3">
+          <div class="card-icon"></div>
+          <div class="card-container">
+            <div class="card-degree"></div>
+          </div>
+        </div>
+        <div class="card-day4">
+          <div class="card-icon"></div>
+          <div class="card-container">
+            <div class="card-degree"></div>
+          </div>
+        </div>
+        <div class="card-day5">
+          <div class="card-icon"></div>
+          <div class="card-container">
+            <div class="card-degree"></div>
+          </div>
+        </div>
+      </section>
 
-    <div class="page-content">
+
+    <!-- <div class="page-content">
       <h1>contenido</h1>
-    </div>
+    </div> -->
 
     <footer>
       <div class="footer-container">
