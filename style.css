@@ -92,7 +92,8 @@ footer {
 }
 
 .logo {
-  width: 180px;
+  height: 93px;
+  width: 43px;
 }
 
 .social-media {
@@ -192,4 +193,42 @@ footer {
     width: 100%;
     margin-top: 20px;
   }
+}
+
+body {
+  width: 100%;
+  height: auto;
+  background-color: lightskyblue;
+  background-image: linear-gradient(0deg, lightskyblue, white);
+}
+
+main {
+  padding-top: 1rem;
+}
+
+#card-resume {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: stretch;
+  width: 15rem;
+  height: 10rem;
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+  padding: 0.5rem;
+  margin: 1rem;
+  transition: all 0.2s ease-in;
+}
+
+.card-icon {
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+  flex-basis: 7rem;
+}
+.card-icon > img {
+  width: 6rem;
+  height: 5rem;
+  padding-left: 1rem;
 }
