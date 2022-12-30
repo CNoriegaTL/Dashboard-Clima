@@ -206,7 +206,7 @@ main{
   padding-top: 1rem;
 }
 
-#card-resume{
+#cardResume{
   color:#001a21;
   display: flex;
   justify-content: center;
@@ -221,14 +221,14 @@ main{
   transition: all 0.2s ease-in;
 }
 
-.card-icon {
+.card-icon0 {
   display: flex;
   align-items: center;
   padding-right: 1rem;
   flex-basis: 7rem;
   
 }
-.card-icon > img {
+.card-icon0 > img {
   width: 6rem;
   height: 5rem;
   padding-left: 1rem;
