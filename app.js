@@ -2,6 +2,7 @@ const solicitud = document.getElementById('solicitud');
 const cardResume = document.getElementById('cardResume');
 const search = document.getElementById('search');
 
+
 window.addEventListener('load', () => {
     solicitud.addEventListener('submit', buscarClima);
 })
@@ -128,4 +129,3 @@ function limpiarHTML() {
 
 //     }
 // }
-
