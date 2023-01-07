@@ -1,12 +1,10 @@
 const solicitud = document.getElementById('solicitud');
 const cardResume = document.getElementById('cardResume');
 const search = document.getElementById('search');
+const btnEnviar = document.getElementById('btnEnviar')
 
-
-window.addEventListener('load', () => {
-    solicitud.addEventListener('submit', buscarClima);
-})
-
+btnEnviar.addEventListener('click', buscarClima)
+  
 
 function buscarClima(e) {
     e.preventDefault();
@@ -65,23 +63,27 @@ function mostrarClima(data) {
     const { icon, description } = data.weather[0];
     const { temp, temp_min, temp_max } = data.main;
 
+    const grados = KelvinACentigrados(temp);
+    const min = KelvinACentigrados(temp_max);
+    const max = KelvinACentigrados(temp_min)
+
     const icon0 = document.createElement('div');
     icon0.classList.add('card-icon0');
     var imagen = document.createElement('img');
-    img.src = `https://openweathermap.org/img/wn/" + ${icon} + "@2x.png`;
+    imagen.src = `http://openweathermap.org/img/wn/` + `${icon}` + `.png`;
     icon0.appendChild(imagen);
 
     const actual = document.createElement('h4');
-    actual.innerHTML = `${temp}`;
+    actual.innerHTML = `${grados} &#8451;`;
 
     const descripcion = document.createElement('p');
     descripcion.innerHTML = `${description}`;
 
     const tempMaxima = document.createElement('p');
-    tempMaxima.innerHTML = `${temp_max}`;
+    tempMaxima.innerHTML = `${max} &#8451;`;
 
     const tempMinima = document.createElement('p');
-    tempMinima.innerHTML = `${temp_min}`;
+    tempMinima.innerHTML = `${min} &#8451;`;
 
     const nombre = document.createElement('h4');
     nombre.innerHTML = `${name}`;
@@ -97,6 +99,10 @@ function mostrarClima(data) {
     cardResume.appendChild(icon0)
     cardResume.appendChild(cardInfo)
 
+}
+
+function KelvinACentigrados(grados) {
+    return parseInt( grados - 273.15);
 }
 
 function limpiarHTML() {
