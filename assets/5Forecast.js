@@ -32,5 +32,5 @@ $.ajax ({
     url: URLForecast,
     method: "GET"
 })
-    .then // desde aqui estamos testeando
+    .then // desde aqui estamos testeand
 
