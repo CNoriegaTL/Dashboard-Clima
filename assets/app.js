@@ -3,7 +3,7 @@
 
 const solicitud = document.getElementById('solicitud');
 const cardResume = document.getElementById('cardResume');
-const search = document.getElementById('search');
+const search = document.getElementById('search'); // Eliminar luego
 const btnEnviar = document.getElementById('btnEnviar');
 
 btnEnviar.addEventListener('click', buscarClima);
@@ -111,27 +111,3 @@ function limpiarHTML() {
     cardResume.removeChild(cardResume.firstChild);
   }
 }
-
-// -----------------------------------TEST------------------------------------------
-// // let weather = {
-// //     "apikey": "45ef79a15574fd2f0643500a864f1492",
-// //     fetchWeather: function (ciudad) {
-// //         fetch(
-// //         "https://api.openweathermap.org/data/2.5/weather?q="
-// //         + ciudad
-// //         + "&appid="
-// //         + this.apikey)
-// //         .then((response) => response.json())
-// //         .then((data) => this.displayWeather(data));
-// //     },
-// //     displayWeather: function(data) {
-// //         const { name } = data;
-// //         const { icon, description } = data.weather[0];
-// //         const { temp, temp_min, temp_max } = data.main;
-// //         console.log(name, icon, description, temp, temp_min, temp_max);
-// //         document.querySelector(".info-dia0").innerText = name;
-// //         document.querySelector("icon0").src = "https://openweathermap.org/img/wn/" + icon + "@2x.png";
-// //         document.querySelector(".degree-dia0").innerText = temp;
-
-// //     }
-// // }
