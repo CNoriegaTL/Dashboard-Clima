@@ -1,0 +1,21 @@
+{
+  "name": "proyecto_api",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "# Esta es una prueba",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CNoriegaTL/Proyecto_API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CNoriegaTL/Proyecto_API/issues"
+  },
+  "homepage": "https://github.com/CNoriegaTL/Proyecto_API#readme"
+}

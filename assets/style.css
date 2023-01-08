@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Poppins' sans-serif;
+  background-color: #fff;
+  background-image: url('https://source.unsplash.com/1600x900/?weather');
+  color: #fff;
+}
+
+.container {
+  padding: 20px 70px;
+}
+
+.info-actual {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.fecha-container .tiempo {
+  font-size: 70px;
+  font-weight: 100;
+}
+
+.fecha-container #am-pm {
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.fecha-container .fecha {
+  font-size: 30px;
+}
+
+.card {
+  background: rgba(33, 102, 214, 0.7);
+  color: #fff;
+  padding: 2rem;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 420px;
+  margin: 1em;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 44px;
+  width: 44px;
+  outline: none;
+  background: #7c7c7c2b;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  padding: 0;
+}
+
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 24px;
+  background: #7c7c7c2b;
+  color: white;
+  font-family: inherit;
+  font-size: 105%;
+  width: calc(100% - 80px);
+}
+
+::placeholder {
+  color: white;
+  opacity: 0.8;
+}
+
+button:hover {
+  background: #7c7c7c6b;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+/* main {
+  padding-top: 1rem;
+} */
+
+#cardResume {
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: stretch;
+  width: 15rem;
+  height: 10rem;
+  /* border-radius: 20px;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+  padding: 0.5rem; */
+  border: none;
+  margin: 1rem;
+  transition: all 0.2s ease-in;
+}
+
+.card-icon0 {
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+  flex-basis: 7rem;
+}
+.card-icon0 > img {
+  width: 6rem;
+  height: 5rem;
+  padding-left: 1rem;
+}
