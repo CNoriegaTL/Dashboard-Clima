@@ -1,7 +1,7 @@
 const solicitud = document.getElementById('solicitud');
 const cardResume = document.getElementById('cardResume');
-const search = document.getElementById('search');
-const btnEnviar = document.getElementById('btnEnviar')
+// const search = document.getElementById('search');
+const btnEnviar = document.getElementById('btnEnviar');
 
 btnEnviar.addEventListener('click', buscarClima)
   
@@ -74,16 +74,16 @@ function mostrarClima(data) {
     icon0.appendChild(imagen);
 
     const actual = document.createElement('h4');
-    actual.innerHTML = `${grados} &#8451;`;
+    actual.innerHTML = `${grados} &deg C`;
 
     const descripcion = document.createElement('p');
     descripcion.innerHTML = `${description}`;
 
     const tempMaxima = document.createElement('p');
-    tempMaxima.innerHTML = `${max} &#8451;`;
+    tempMaxima.innerHTML = `${max} &deg C`;
 
     const tempMinima = document.createElement('p');
-    tempMinima.innerHTML = `${min} &#8451;`;
+    tempMinima.innerHTML = `${min} &deg C`;
 
     const nombre = document.createElement('h4');
     nombre.innerHTML = `${name}`;
@@ -111,27 +111,6 @@ function limpiarHTML() {
     }
 }
 
+// export { KelvinACentigrados };
+// export { ciudad };
 
-//-----------------------------------TEST------------------------------------------
-// let weather = {
-//     "apikey": "45ef79a15574fd2f0643500a864f1492",
-//     fetchWeather: function (ciudad) {
-//         fetch(
-//         "https://api.openweathermap.org/data/2.5/weather?q=" 
-//         + ciudad 
-//         + "&appid=" 
-//         + this.apikey)
-//         .then((response) => response.json())
-//         .then((data) => this.displayWeather(data));
-//     },
-//     displayWeather: function(data) {
-//         const { name } = data;
-//         const { icon, description } = data.weather[0];
-//         const { temp, temp_min, temp_max } = data.main;
-//         console.log(name, icon, description, temp, temp_min, temp_max);
-//         document.querySelector(".info-dia0").innerText = name;
-//         document.querySelector("icon0").src = "https://openweathermap.org/img/wn/" + icon + "@2x.png";
-//         document.querySelector(".degree-dia0").innerText = temp;
-
-//     }
-// }
