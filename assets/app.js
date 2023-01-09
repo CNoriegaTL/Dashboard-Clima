@@ -1,6 +1,8 @@
 // import { fechaActual } from './fechahora';
 // import { tiempoActual } from './fechahora';
 
+import { forecastAPI } from "./5Forecast.js";
+
 const solicitud = document.getElementById('solicitud');
 const cardResume = document.getElementById('cardResume');
 const search = document.getElementById('search'); // Eliminar luego
@@ -38,7 +40,7 @@ function mostrarError(mensaje) {
 
 function consultarAPI(ciudad) {
   const appId = '45ef79a15574fd2f0643500a864f1492';
-  let url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad},&appid=${appId}`;
+  let url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad},&appid=${appId}&lang=es`;
 
   limpiarHTML();
 
@@ -53,6 +55,7 @@ function consultarAPI(ciudad) {
         mostrarError('Ciudad No Encontrada');
       } else {
         mostrarClima(data);
+        forecastAPI(ciudad);
       }
     })
     .catch((error) => {
@@ -76,16 +79,16 @@ function mostrarClima(data) {
   icon0.appendChild(imagen);
 
   const actual = document.createElement('h4');
-  actual.innerHTML = `${grados} &#8451;`;
+  actual.innerHTML = `Actual ${grados} &#8451;`;
 
   const descripcion = document.createElement('p');
-  descripcion.innerHTML = `${description}`;
+  descripcion.innerHTML = `Se espera ${description}`;
 
   const tempMaxima = document.createElement('p');
-  tempMaxima.innerHTML = `${max} &#8451;`;
+  tempMaxima.innerHTML = `Max: ${max} &#8451;`;
 
   const tempMinima = document.createElement('p');
-  tempMinima.innerHTML = `${min} &#8451;`;
+  tempMinima.innerHTML = `Min: ${min} &#8451;`;
 
   const nombre = document.createElement('h4');
   nombre.innerHTML = `${name}`;
@@ -100,6 +103,7 @@ function mostrarClima(data) {
 
   cardResume.appendChild(icon0);
   cardResume.appendChild(cardInfo);
+
 }
 
 function KelvinACentigrados(grados) {
@@ -111,3 +115,5 @@ function limpiarHTML() {
     cardResume.removeChild(cardResume.firstChild);
   }
 }
+
+export { KelvinACentigrados }
