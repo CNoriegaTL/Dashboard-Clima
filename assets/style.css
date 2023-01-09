@@ -134,3 +134,59 @@ button:hover {
   height: 5rem;
   padding-left: 1rem;
 }
+
+#card-days {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-day1 {
+  background: rgba(33, 102, 214, 0.7);
+  color: #fff;
+  padding: 2rem;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 420px;
+  margin: 1em;
+}
+
+.card-day2 {
+  background: rgba(33, 102, 214, 0.7);
+  color: #fff;
+  padding: 2rem;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 420px;
+  margin: 1em;
+}
+
+.card-day3 {
+  background: rgba(33, 102, 214, 0.7);
+  color: #fff;
+  padding: 2rem;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 420px;
+  margin: 1em;
+}
+
+.card-day4 {
+  background: rgba(33, 102, 214, 0.7);
+  color: #fff;
+  padding: 2rem;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 420px;
+  margin: 1em;
+}
+
+.card-day5 {
+  background: rgba(33, 102, 214, 0.7);
+  color: #fff;
+  padding: 2rem;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 420px;
+  margin: 1em;
+}

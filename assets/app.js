@@ -1,7 +1,7 @@
 // import { fechaActual } from './fechahora';
 // import { tiempoActual } from './fechahora';
 
-import { forecastAPI, mostrarForecast } from "./5Forecast.js";
+import { forecastAPI } from "./5Forecast.js";
 
 const solicitud = document.getElementById('solicitud');
 const cardResume = document.getElementById('cardResume');
@@ -79,16 +79,16 @@ function mostrarClima(data) {
   icon0.appendChild(imagen);
 
   const actual = document.createElement('h4');
-  actual.innerHTML = `${grados} &#8451;`;
+  actual.innerHTML = `Actual ${grados} &#8451;`;
 
   const descripcion = document.createElement('p');
-  descripcion.innerHTML = `${description}`;
+  descripcion.innerHTML = `Se espera ${description}`;
 
   const tempMaxima = document.createElement('p');
-  tempMaxima.innerHTML = `${max} &#8451;`;
+  tempMaxima.innerHTML = `Max: ${max} &#8451;`;
 
   const tempMinima = document.createElement('p');
-  tempMinima.innerHTML = `${min} &#8451;`;
+  tempMinima.innerHTML = `Min: ${min} &#8451;`;
 
   const nombre = document.createElement('h4');
   nombre.innerHTML = `${name}`;
