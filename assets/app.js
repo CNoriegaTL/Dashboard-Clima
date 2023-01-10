@@ -1,7 +1,7 @@
 // import { fechaActual } from './fechahora';
 // import { tiempoActual } from './fechahora';
 
-import { forecastAPI } from "./5Forecast.js";
+import { forecastAPI } from './5Forecast.js';
 
 const solicitud = document.getElementById('solicitud');
 const cardResume = document.getElementById('cardResume');
@@ -103,7 +103,6 @@ function mostrarClima(data) {
 
   cardResume.appendChild(icon0);
   cardResume.appendChild(cardInfo);
-
 }
 
 function KelvinACentigrados(grados) {
@@ -116,4 +115,4 @@ function limpiarHTML() {
   }
 }
 
-export { KelvinACentigrados }
+export { KelvinACentigrados };
