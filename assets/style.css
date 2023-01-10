@@ -7,14 +7,15 @@
 }
 
 body {
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   margin: 0;
   font-family: 'Poppins' sans-serif;
   background-color: #fff;
   background-image: url('https://source.unsplash.com/1600x900/?weather');
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #fff;
 }
 
@@ -26,6 +27,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background: rgba(33, 102, 214, 0.7);
 }
 
 .fecha-container .tiempo {
@@ -49,7 +51,7 @@ body {
   border-radius: 30px;
   width: 100%;
   max-width: 420px;
-  margin: 1em;
+  margin: 1em auto;
 }
 
 .search {
@@ -121,6 +123,7 @@ button:hover {
   border: none;
   margin: 1rem;
   transition: all 0.2s ease-in;
+  font-size: 1.2em;
 }
 
 .card-icon0 {
@@ -136,9 +139,22 @@ button:hover {
 }
 
 #card-days {
-  display: grid;
+  display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-forecast {
+  background: rgba(33, 102, 214, 0.7);
+  color: #fff;
+  padding: 2rem;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 420px;
+  margin: 1em;
+  font-size: 1.5em;
+  text-align: center;
 }
 
 .card-day1 {
