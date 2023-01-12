@@ -5,10 +5,14 @@ import { forecastAPI } from './5Forecast.js';
 
 const solicitud = document.getElementById('solicitud');
 const cardResume = document.getElementById('cardResume');
-const search = document.getElementById('search'); // Eliminar luego
 const btnEnviar = document.getElementById('btnEnviar');
 
 btnEnviar.addEventListener('click', buscarClima);
+// document.querySelector('btnEnviar').addEventListener('keyup', function () {
+//   if (event.key == 'Enter') {
+//     buscarClima;
+//   }
+// });
 
 function buscarClima(e) {
   e.preventDefault();
@@ -20,7 +24,6 @@ function buscarClima(e) {
     mostrarError('Campo Obligatorio');
     return;
   }
-
   consultarAPI(ciudad);
 }
 
