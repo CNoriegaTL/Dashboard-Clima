@@ -77,7 +77,14 @@
           <div class="card-forecast" id="card-day5"></div>
         </section>
       </div>
-    </div>
+      <div class="grafico-forecast">
+        <canvas id="graficoForecast"></canvas>
+      </div>
+
+      <!-- <div class="grafico-historico">
+        <canvas id="graficoHistorico"></canvas>
+      </div>
+    </div> -->
 
     <footer class="footer">
       <p>
@@ -85,9 +92,15 @@
         reservados.
       </p>
     </footer>
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"
+      integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="assets/app.js" type="module"></script>
     <script src="assets/fechahora.js" type="module"></script>
     <script src="assets/5Forecast.js" type="module"></script>
+    <script src="assets/graficos_forecast.js" type="module"></script>
   </body>
 </html>

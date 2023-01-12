@@ -44,5 +44,4 @@ setInterval(() => {
   fechaActual.innerHTML = dias[dia] + ', ' + fecha + ' ' + meses[mes];
 }, 1000);
 
-export { tiempoActual, fechaActual }; // Como se importa y se usa en el app.js?
-// Si en index.html coloco el script haciendo referencia a este archivo funciona ok, se actualiza la fecha y hora correctamente.
+export { tiempoActual, fechaActual };
