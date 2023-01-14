@@ -26,6 +26,6 @@ Se usaron las siguientes APIs para el proyecto:
 
 # Imagen del Dashboard
 
-![Dashboard](https://github.com/CNoriegaTL/Dashboard-Clima/assets/main/imagen-dashboard.jpg?raw=true)
+![Dashboard](https://github.com/CNoriegaTL/Dashboard-Clima/blob/main/assets/imagen-dashboard.jpg)
 
 
