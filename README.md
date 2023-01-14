@@ -7,9 +7,9 @@ Tabla de contenidos:
 - Instalacion.
 - Link para acceder al Dashboard en GitHub
 
-# Descripcion del proyecto:
+# Descripcion del proyecto
 
-El proyecto consiste en un dashboard de una aplicacion, donde el usuario puede buscar el clima actual y de los proximos 5 dias de distintas ciudades.
+El proyecto consiste en un dashboard aplicativo, donde el usuario puede buscar el clima actual y de los proximos 5 dias de distintas ciudades.
 
 Se usaron las siguientes APIs para el proyecto:
 
@@ -32,9 +32,10 @@ Se usaron las siguientes APIs para el proyecto:
 
 Guia para instalar tu proyecto en tu maquina local:
 
-    1. Clona o descarga el repositorio en tu maquina local.
+    1. Clona o descarga el repositorio en tu maquina local (Ver nota 1)
     2. Abre el archivo index.html usando tu explorador.
-    3. Node
+ 
+ Nota 1: Es necesario instalar Node.js previamente.
 
 # Link para acceder al Dashboard
 
