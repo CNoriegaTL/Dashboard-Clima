@@ -28,4 +28,15 @@ Se usaron las siguientes APIs para el proyecto:
 
 ![Dashboard](https://github.com/CNoriegaTL/Dashboard-Clima/blob/main/assets/imagen-dashboard.jpg)
 
+# Instalación
 
+Guia para instalar tu proyecto en tu maquina local:
+
+    1. Clona o descarga el repositorio en tu maquina local.
+    2. Abre el archivo index.html usando tu explorador.
+    3. Node
+
+# Link para acceder al Dashboard
+
+- GitHub: agregar link
+- Netlify:  agregar link
