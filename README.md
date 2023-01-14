@@ -39,5 +39,4 @@ Guia para instalar tu proyecto en tu maquina local:
 
 # Link para acceder al Dashboard
 
-- GitHub: agregar link
-- Netlify:  agregar link
+- GitHub: https://cnoriegatl.github.io/Dashboard-Clima/
