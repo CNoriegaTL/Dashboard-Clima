@@ -140,6 +140,12 @@ button:hover {
   flex-wrap: wrap;
 }
 
+h1 {
+  justify-content: center;
+  display: flex;
+  font-weight: lighter;
+}
+
 .card-forecast {
   background: rgba(33, 102, 214, 0.7);
   color: #fff;
