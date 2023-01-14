@@ -208,3 +208,10 @@ button:hover {
   background: rgba(255, 255, 255, 0.7);
   align-items: center;
 }
+
+.grafico-historico {
+  width: auto;
+  height: auto;
+  background: rgba(255, 255, 255, 0.7);
+  align-items: center;
+}
