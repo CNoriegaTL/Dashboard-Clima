@@ -33,11 +33,15 @@ function mostrarForecast(data) {
   console.log(data);
 
   function datosDia1(data) {
+    const { dt_txt } = data.list[0];
     const { icon, description } = data.list[0].weather[0];
     const { temp_min, temp_max } = data.list[0].main;
 
     const maxFcst = KelvinACentigrados(temp_max);
     const minFcst = KelvinACentigrados(temp_min);
+
+    const fechaUno = document.createElement('p');
+    fechaUno.innerHTML = `${dt_txt}`;
 
     const icon1 = document.createElement('img');
     icon1.src = `http://openweathermap.org/img/wn/` + `${icon}` + `.png`;
@@ -53,6 +57,7 @@ function mostrarForecast(data) {
 
     const infoFcst1 = document.createElement('div');
     infoFcst1.classList.add('cardContainer1');
+    infoFcst1.appendChild(fechaUno);
     infoFcst1.appendChild(icon1);
     infoFcst1.appendChild(descripcion);
     infoFcst1.appendChild(tempMax1);
@@ -62,11 +67,15 @@ function mostrarForecast(data) {
   }
 
   function datosDia2(data) {
+    const { dt_txt } = data.list[8];
     const { icon, description } = data.list[8].weather[0];
     const { temp_min, temp_max } = data.list[8].main;
 
     const maxFcst = KelvinACentigrados(temp_max);
     const minFcst = KelvinACentigrados(temp_min);
+
+    const fechaDos = document.createElement('p');
+    fechaDos.innerHTML = `${dt_txt}`;
 
     const icon2 = document.createElement('img');
     icon2.src = `http://openweathermap.org/img/wn/` + `${icon}` + `.png`;
@@ -82,6 +91,7 @@ function mostrarForecast(data) {
 
     const infoFcst2 = document.createElement('div');
     infoFcst2.classList.add('cardContainer2');
+    infoFcst2.appendChild(fechaDos);
     infoFcst2.appendChild(icon2);
     infoFcst2.appendChild(descripcion);
     infoFcst2.appendChild(tempMax2);
@@ -91,11 +101,15 @@ function mostrarForecast(data) {
   }
 
   function datosDia3(data) {
+    const { dt_txt } = data.list[16];
     const { icon, description } = data.list[16].weather[0];
     const { temp_min, temp_max } = data.list[16].main;
 
     const maxFcst = KelvinACentigrados(temp_max);
     const minFcst = KelvinACentigrados(temp_min);
+
+    const fechaTres = document.createElement('p');
+    fechaTres.innerHTML = `${dt_txt}`;
 
     const icon3 = document.createElement('img');
     icon3.src = `http://openweathermap.org/img/wn/` + `${icon}` + `.png`;
@@ -111,6 +125,7 @@ function mostrarForecast(data) {
 
     const infoFcst3 = document.createElement('div');
     infoFcst3.classList.add('cardContainer3');
+    infoFcst3.appendChild(fechaTres);
     infoFcst3.appendChild(icon3);
     infoFcst3.appendChild(descripcion);
     infoFcst3.appendChild(tempMax3);
@@ -120,12 +135,16 @@ function mostrarForecast(data) {
   }
 
   function datosDia4(data) {
+    const { dt_txt } = data.list[24];
     const { icon, description } = data.list[24].weather[0];
     const { temp_min, temp_max } = data.list[24].main;
 
     const maxFcst = KelvinACentigrados(temp_max);
     const minFcst = KelvinACentigrados(temp_min);
 
+    const fechaCuatro = document.createElement('p');
+    fechaCuatro.innerHTML = `${dt_txt}`;
+    
     const icon4 = document.createElement('img');
     icon4.src = `http://openweathermap.org/img/wn/` + `${icon}` + `.png`;
 
@@ -140,6 +159,7 @@ function mostrarForecast(data) {
 
     const infoFcst4 = document.createElement('div');
     infoFcst4.classList.add('cardContainer4');
+    infoFcst4.appendChild(fechaCuatro);
     infoFcst4.appendChild(icon4);
     infoFcst4.appendChild(descripcion);
     infoFcst4.appendChild(tempMax4);
@@ -149,11 +169,15 @@ function mostrarForecast(data) {
   }
 
   function datosDia5(data) {
+    const { dt_txt } = data.list[32];
     const { icon, description } = data.list[32].weather[0];
     const { temp_min, temp_max } = data.list[32].main;
 
     const maxFcst = KelvinACentigrados(temp_max);
     const minFcst = KelvinACentigrados(temp_min);
+
+    const fechaCinco = document.createElement('p');
+    fechaCinco.innerHTML = `${dt_txt}`;
 
     const icon5 = document.createElement('img');
     icon5.src = `http://openweathermap.org/img/wn/` + `${icon}` + `.png`;
@@ -169,6 +193,7 @@ function mostrarForecast(data) {
 
     const infoFcst5 = document.createElement('div');
     infoFcst5.classList.add('cardContainer5');
+    infoFcst5.appendChild(fechaCinco);
     infoFcst5.appendChild(icon5);
     infoFcst5.appendChild(descripcion);
     infoFcst5.appendChild(tempMax5);
