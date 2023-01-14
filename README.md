@@ -35,7 +35,7 @@ Guia para instalar tu proyecto en tu maquina local:
 - Clona o descarga el repositorio en tu maquina local (Ver nota 1)
 - Abre el archivo index.html usando tu explorador.
  
- Nota 1: Es necesario instalar Node.js previamente.
+ Nota 1: Es necesario instalar Node.js previamente (https://nodejs.org)
 
 # Link para acceder al Dashboard
 
