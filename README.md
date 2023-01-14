@@ -1,6 +1,6 @@
 # Dashboard de Clima
 
-Tabla de contenidos:
+Tabla de contenido:
 
 - Descripcion del proyecto
 - Tecnologias usadas en el proyecto
