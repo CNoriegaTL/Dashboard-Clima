@@ -32,8 +32,8 @@ Se usaron las siguientes APIs para el proyecto:
 
 Guia para instalar tu proyecto en tu maquina local:
 
-    1. Clona o descarga el repositorio en tu maquina local (Ver nota 1)
-    2. Abre el archivo index.html usando tu explorador.
+- Clona o descarga el repositorio en tu maquina local (Ver nota 1)
+- Abre el archivo index.html usando tu explorador.
  
  Nota 1: Es necesario instalar Node.js previamente.
 
