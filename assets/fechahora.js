@@ -35,7 +35,8 @@ setInterval(() => {
   const dia = tiempo.getDay();
   const hora = tiempo.getHours();
   const horasEn12Horas = hora >= 13 ? hora % 12 : hora;
-  const minutos = tiempo.getMinutes();
+  let minutos = tiempo.getMinutes();
+  minutos = minutos < 10 ? '0' + minutos : minutos;
   const ampm = hora >= 12 ? 'PM' : 'AM';
 
   tiempoActual.innerHTML =
